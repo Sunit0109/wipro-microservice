@@ -1,0 +1,27 @@
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+    "employeeName": "person1",
+    "employeeAddress": "001 StreetX, City"
+}
+
+
+GET request http://localhost:8080/employees
+GET http://localhost:8080/employees/{id}
+
+PUT http://localhost:8080/employees/{id}
+Content-Type: application/json
+{
+    "employeeName": "Updated Name",
+    "employeeAddress": "Updated Address"
+}
+
+PUT http://localhost:8080/employees/{id}
+Content-Type: application/json
+{
+    "employeeName": "Updated Name",
+    "employeeAddress": "Updated Address"
+}
+
+DELETE http://localhost:8080/employees/{id}
